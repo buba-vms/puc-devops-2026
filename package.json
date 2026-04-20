@@ -1,0 +1,12 @@
+{
+  "name": "puc-devops-api",
+  "version": "1.0.0",
+  "description": "API REST simples para a disciplina de DevOps da PUC",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
