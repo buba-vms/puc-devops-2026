@@ -18,4 +18,11 @@ router.get('/:id', (req, res) => {
   res.json(produto);
 });
 
+router.post('/', (req, res) => {
+  const { nome, preco } = req.body;
+  const novoProduto = { id: produtos.length + 1, nome, preco };
+  produtos.push(novoProduto);
+  res.status(201).json(novoProduto);
+});
+
 module.exports = router;
